@@ -1,6 +1,6 @@
 ---
 title: "Lab 00 - Hello IDS!"
-author: "INSERT YOUR NAME HERE"
+author: "Helen Miller"
 date: "`r Sys.Date()`"
 output: html_document
 ---
@@ -17,15 +17,15 @@ We set up the data frame. Edit the data below to include information about your 
 
 ```{r setup-tibble}
 team_data <- tibble(
-  name = c("Peter Rabbit", "member 1", "member 2", 
-           "member 3", "member 4"),
-  github_username = c("mcgregors-garden", "username 1", "username 2", 
-                      "username 3", "username 4"), 
-  colour = c("powderblue", "colour 1", "colour 2", 
-             "colour 3", "colour 4"),
-  hobby = c("Hopping", "hobby 1", "hobby 2", 
-            "hobby 3", "hobby 4"),
-  favourite_number = c(2, NA, NA, NA, NA)
+  name = c("Andrew", "Helen", "Adam", 
+           "Max", "Sarah", "Liv"),
+  github_username = c("pukklemaster", "helenrmiller", "adamlaycock", 
+                      "MaxwellPohlman", "sarahstewart142", "oliviaharris1"), 
+  colour = c("mediumaquamarine", "thistle1", "forestgreen", 
+             "slategray3", "powderblue", "violetred"),
+  hobby = c("knitting", "crochet", "guitar", 
+            "climbing", "swimming", "netball"),
+  favourite_number = c(7, 4, 7, 10, 6, 4)
   )
 
 team_data
@@ -47,7 +47,7 @@ p1
 ```
 
 
-*Remove this text (including the stars), and add your answer for Exercise 18 here.*
+This visualization plots the data saved as teamdata as a bar chart and saves it as p1. On the x axis, usernames are shown. On the y axis, the corresponding numbers are shown. The bars are filled with each person's favourite colour.
 
 ### Exercises 19
 
