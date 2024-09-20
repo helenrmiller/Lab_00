@@ -54,12 +54,12 @@ This visualization plots the data saved as teamdata as a bar chart and saves it 
 Change the text of the plot title and axis labels.
 
 ```{r labelled-bar-plot}
-p1 + labs(x = "Insert text here", 
-          y = "Insert text here",
-          title = "Insert text here")
+p1 + labs(x = "Github Username", 
+          y = "Favourite Number (1-10)",
+          title = "General Information About IDS Group Members")
 ```
 
-*Remove this text (including the stars), and add your answer for Exercise 19 here.*
+The labs() function adds labels to the plot.
 
 ### Exercise 20
 
@@ -69,4 +69,4 @@ p2 <- ggplot(team_data, aes(x = hobby)) +
 p2
 ```
 
-*Remove this text (including the stars) and add your answer for Exercise 20 here.*
+This is a poor visualisation because there are too many possible observations for the categorical variable "hobby". This would be even worse if we included every member of the class, because very few people probably have the same hobbies. A better way to visualise this may be to assign each hobby obeservation to a general category (i.e. 'crafts', 'sports', 'music', etc.) and plot that variable instead.
